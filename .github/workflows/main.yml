@@ -18,8 +18,8 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
-        run: docker build -t pavithra123456789/flaskweb:latest -f ./flask-app/Dockerfile ./flask-app
+      -  name: Build Docker image
+         run: docker build -t pavithra123456789/flaskweb:latest -f ./flaskapplication/Dockerfile ./flaskapplication
 
 
       - name: Push Docker image
