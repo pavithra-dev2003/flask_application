@@ -19,7 +19,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t pavithra123456789/flaskweb:latest .
+        run: docker build -t pavithra123456789/flaskweb:latest -f ./flask-app/Dockerfile ./flask-app
+
 
       - name: Push Docker image
         run: docker push pavithra123456789/flaskweb:latest
