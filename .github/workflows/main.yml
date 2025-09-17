@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      RESOURCE_GROUP_NAME: myResourceGroup         
-      AKS_CLUSTER_NAME: myAKSCluster             
+      RESOURCE_GROUP_NAME: pavithra-rg         
+      AKS_CLUSTER_NAME: bettercluster1             
       DOCKER_IMAGE_NAME: flaskweb            
       DOCKER_TAG: latest           
 
